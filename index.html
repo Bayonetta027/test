@@ -36,13 +36,19 @@
       background:rgba(0,0,0,.18);backdrop-filter:blur(10px);
     }
     .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.02em}
+
+    /* LOGO IMAGE (prometheus.png) */
     .logo{
-      width:34px;height:34px;border-radius:12px;border:1px solid var(--border);
-      background:
-        radial-gradient(circle at 30% 30%, rgba(122,167,255,.9), transparent 55%),
-        radial-gradient(circle at 70% 70%, rgba(124,255,191,.7), transparent 55%),
-        rgba(255,255,255,.05);
+      width:34px;
+      height:34px;
+      border-radius:10px;
+      object-fit:contain;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      padding:4px;
+      display:block;
     }
+
     .nav{display:flex;gap:10px;flex-wrap:wrap}
     .pill{
       padding:9px 12px;border-radius:999px;border:1px solid var(--border);
@@ -109,7 +115,10 @@
 <body>
   <div class="wrap">
     <div class="top">
-      <div class="brand"><div class="logo"></div>Prometheus</div>
+      <div class="brand">
+        <img class="logo" src="prometheus.png" alt="Prometheus logo">
+        Prometheus
+      </div>
       <div class="nav">
         <a class="pill" href="#links">Links</a>
         <a class="pill" href="#about">About</a>
@@ -122,9 +131,9 @@
       <p class="sub">A clean hub for your wiki, downloads/mirror, community, and repos.</p>
       <div class="cta">
         <!-- CHANGE THESE -->
-        <a class="btn primary" href="https://wiki.owdev.wiki">Open Wiki →</a>
-        <a class="btn" href="https://cdn.owdev.wiki">Downloads / CDN →</a>
-        <a class="btn" href="https://github.com/">GitHub →</a>
+        <a class="btn primary" href="https://owdev.wiki">Open Wiki →</a>
+        <a class="btn" href="https://owdev.wiki">Downloads / CDN →</a>
+        <a class="btn" href="https://github.com/BreakingBread0/prometheus/tree/artpop2">GitHub →</a>
         <a class="btn" href="#">Discord →</a>
       </div>
 
@@ -132,13 +141,13 @@
         <div class="card half">
           <h2>Wiki</h2>
           <p>Documentation and reference pages.</p>
-          <a class="mini" href="https://wiki.owdev.wiki">Go to Wiki →</a>
+          <a class="mini" href="https://owdev.wiki">Go to Wiki →</a>
         </div>
 
         <div class="card half">
           <h2>CDN / Mirror</h2>
           <p>Downloads, archived files, and checksums.</p>
-          <a class="mini" href="https://cdn.owdev.wiki">Browse Files →</a>
+          <a class="mini" href="https://owdev.wiki">Browse Files →</a>
         </div>
 
         <div class="card third">
@@ -150,7 +159,7 @@
         <div class="card third">
           <h2>GitHub</h2>
           <p>Repos, releases, issues.</p>
-          <a class="mini" href="https://github.com/">Open →</a>
+          <a class="mini" href="https://github.com/BreakingBread0/prometheus/tree/artpop2">Open →</a>
         </div>
 
         <div class="card third">
@@ -177,7 +186,4 @@
     </div>
   </div>
 </body>
-
 </html>
-
-
